@@ -39,6 +39,7 @@ img:nth-child(4) {
    right: var(--x-axis-offset--bottom-fish);
 }
 
+h1,
 p {
    text-align: center;
 }
