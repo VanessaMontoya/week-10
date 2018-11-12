@@ -1,0 +1,44 @@
+div {
+   position: relative;
+   margin: auto;
+   background-color: hsl(70, 1%, 50%);
+   background-image: url('../img/sea.png');
+   width: 800px;
+   height: 600px;
+   --top-offset: 200px;
+   --x-axis-offset--top-fish: 120px;
+   --bottom-offset: 160px;
+   --x-axis-offset--bottom-fish: 40px;
+}
+
+img {
+   position: absolute;
+}
+
+img:nth-child(odd) {
+   transform: rotateY(180deg)
+}
+
+img:nth-child(1) {
+   top: var(--top-offset);
+   left: var(--x-axis-offset--top-fish);
+}
+
+img:nth-child(2) {
+   top: var(--top-offset);
+   right: var(--x-axis-offset--top-fish);
+}
+
+img:nth-child(3) {
+   bottom: var(--bottom-offset);
+   left: var(--x-axis-offset--bottom-fish);
+}
+
+img:nth-child(4) {
+   bottom: var(--bottom-offset);
+   right: var(--x-axis-offset--bottom-fish);
+}
+
+p {
+   text-align: center;
+}
