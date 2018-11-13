@@ -10,10 +10,17 @@ div {
 
 div > p {
    background-color: yellow;
+   width: 40px;
+   text-align: center;
+   flex-grow: 1;
+}
+
+div > p:nth-child(2) {
+   flex-grow: 2;
 }
 
 @media (max-width: 768px) {
-   div {
-      display: block;
+   div > p:nth-child(2){
+      flex-grow: 1;
    }
 }
