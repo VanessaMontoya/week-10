@@ -1,0 +1,19 @@
+:root {
+   font-size: 32px;
+}
+
+div {
+   display: flex;
+   border: 1px solid black;
+   width: 300px;
+}
+
+div > p {
+   background-color: yellow;
+}
+
+@media (max-width: 768px) {
+   div {
+      display: block;
+   }
+}
