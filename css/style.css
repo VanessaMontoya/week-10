@@ -3,7 +3,13 @@
 }
 
 div {
+   margin: auto;
    display: flex;
+   justify-content: center;
+   justify-content: space-around;
+   justify-content: space-between;
+   justify-content: flex-end;
+   justify-content: flex-start;
    border: 1px solid black;
    width: 300px;
 }
@@ -12,15 +18,4 @@ div > p {
    background-color: yellow;
    width: 40px;
    text-align: center;
-   flex-grow: 1;
-}
-
-div > p:nth-child(2) {
-   flex-grow: 2;
-}
-
-@media (max-width: 768px) {
-   div > p:nth-child(2){
-      flex-grow: 1;
-   }
 }
