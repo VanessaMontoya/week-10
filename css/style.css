@@ -16,7 +16,7 @@ img {
 }
 
 img:nth-child(odd) {
-   transform: rotateY(180deg)
+   transform: rotateY(180deg);
 }
 
 img:nth-child(1) {
